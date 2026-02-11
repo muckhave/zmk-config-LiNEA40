@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -154,7 +154,7 @@
 &mt LCTRL ESC                   &kp LEFT_WIN  &mt LEFT_ALT GRAVE            &kp INS                         &kp SPACE                      &lt 3 TAB    &kp BACKSPACE  &tap_hold_layer_ori 8 ENTER                                         &lt 6 DELETE                   &kp BACKSLASH            &mt RIGHT_SHIFT SLASH
             >;
 
-            sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&mouse_scrl SCRL_RIGHT SCRL_LEFT>;
         };
 
         //1
@@ -222,13 +222,13 @@
 
         WIRELESS {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                         &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans        &trans        &trans        &trans        &trans                               &trans          &trans        &trans        &trans        &trans
-&trans        &trans        &trans        &trans        &trans                               &trans          &trans        &trans        &trans        &bt BT_CLR
-&trans        &trans        &trans        &trans        &trans        &trans    &bootloader  &studio_unlock                &trans        &trans        &bt BT_CLR_ALL
+&bt BT_SEL 0       &bt BT_SEL 1          &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                         &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC  &trans        &trans        &trans                               &trans          &trans        &trans        &trans        &trans
+&kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC  &trans        &trans        &trans                               &trans          &trans        &trans        &trans        &bt BT_CLR
+&trans             &trans                &trans        &trans        &trans        &trans    &bootloader  &studio_unlock                &trans        &trans        &bt BT_CLR_ALL
             >;
 
-            sensor-bindings = <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         mouse2 {
@@ -242,10 +242,10 @@
 
         num {
             bindings = <
-&trans  &kp N7        &kp N8        &kp N9        &trans                    &trans  &trans  &trans  &trans  &trans
-&kp N0  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans        &trans        &trans  &trans    &trans  &trans          &trans  &trans  &trans
+&trans  &kp N7        &kp N8        &kp N9        &kp LEFT_PARENTHESIS                    &kp RIGHT_PARENTHESIS  &trans  &trans  &trans  &trans
+&kp N0  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp LEFT_BRACKET                        &kp RIGHT_BRACKET      &trans  &trans  &trans  &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LEFT_BRACE                          &kp RIGHT_BRACE        &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans                &trans    &trans  &trans                         &trans  &trans  &trans
             >;
         };
     };
