@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -246,6 +246,15 @@
 &kp N0  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp LEFT_BRACKET                        &kp RIGHT_BRACKET      &trans  &trans  &trans  &trans
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LEFT_BRACE                          &kp RIGHT_BRACE        &trans  &trans  &trans  &trans
 &trans  &trans        &trans        &trans        &trans                &trans    &trans  &trans                         &trans  &trans  &trans
+            >;
+        };
+
+        kakko {
+            bindings = <
+&trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans                &trans                 &trans  &trans    &trans  &trans          &trans  &trans  &trans
             >;
         };
     };
