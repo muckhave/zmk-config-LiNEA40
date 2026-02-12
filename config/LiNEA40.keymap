@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -153,10 +153,10 @@
 
         default_layer {
             bindings = <
-&kp Q                           &kp L         &kp U                             &kp COMMA                       &kp PERIOD                                                                 &tap_hold_layer_ori 4 F            &kp W                            &tap_hold_layer_ori 9 R        &kp Y                    &kp P
-&tap_hold_layer_ori 5 E         &kp I         &tap_hold_mod_ori LEFT_ALT A      &tap_hold_mod_ori LEFT_SHIFT O  &tap_hold_mod_ori LCTRL MINUS                                              &tap_hold_mod_ori RIGHT_CONTROL K  &tap_hold_mod_ori RIGHT_SHIFT T  &tap_hold_mod_ori RIGHT_ALT N  &tap_hold_layer_ori 7 S  &tap_hold_layer_ori 5 H
-&tap_hold_mod_ori LEFT_SHIFT Z  &kp X         &kp C                             &kp V                           &kp SEMICOLON                                                              &kp G                              &kp D                            &tap_hold_layer_ori 2 M        &kp J                    &tap_hold_mod_ori RIGHT_SHIFT B
-&tap_hold_mod_ori LCTRL ESC     &kp LEFT_WIN  &tap_hold_mod_ori LEFT_ALT GRAVE  &kp INS                         &tap_hold_layer_ori 7 SPACE    &tap_hold_layer_ori 3 TAB    &kp BACKSPACE  &tap_hold_layer_ori 8 ENTER                                         &tap_hold_layer_ori 6 DELETE   &kp BACKSLASH            &tap_hold_mod_ori RIGHT_CONTROL SLASH
+&kp Q                           &kp L         &kp U                              &kp COMMA                       &kp PERIOD                                                                 &tap_hold_layer_ori 4 F            &kp W                            &tap_hold_layer_ori 9 R        &kp Y                    &kp P
+&tap_hold_layer_ori 5 E         &kp I         &tap_hold_mod_ori LEFT_ALT A       &tap_hold_mod_ori LEFT_SHIFT O  &tap_hold_mod_ori LCTRL MINUS                                              &tap_hold_mod_ori RIGHT_CONTROL K  &tap_hold_mod_ori RIGHT_SHIFT T  &tap_hold_mod_ori RIGHT_ALT N  &tap_hold_layer_ori 7 S  &tap_hold_layer_ori 5 H
+&tap_hold_mod_ori LEFT_SHIFT Z  &kp X         &kp C                              &kp V                           &kp SEMICOLON                                                              &kp G                              &kp D                            &tap_hold_layer_ori 2 M        &kp J                    &tap_hold_mod_ori RIGHT_SHIFT B
+&tap_hold_mod_ori LCTRL ESC     &kp LEFT_WIN  &tap_hold_mod_ori LEFT_ALT ESCAPE  &kp INS                         &tap_hold_layer_ori 7 SPACE    &tap_hold_layer_ori 3 TAB    &kp BACKSPACE  &tap_hold_layer_ori 8 ENTER                                         &tap_hold_layer_ori 6 DELETE   &kp BACKSLASH            &tap_hold_mod_ori RIGHT_CONTROL SLASH
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_RIGHT SCRL_LEFT>;
@@ -201,10 +201,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &kp F7  &kp F8  &kp F9  &kp F12                    &trans      &trans  &kp LA(PRINTSCREEN)  &trans  &kp LC(LA(DELETE))
-&trans  &kp F4  &kp F5  &kp F6  &kp F11                    &trans      &trans  &kp LS(LG(S))        &trans  &kp LC(LS(ESCAPE))
-&trans  &kp F1  &kp F2  &kp F3  &kp F10                    &kp C_MUTE  &trans  &trans               &trans  &kp LC(LA(INS))
-&trans  &trans  &trans  &trans  &trans   &trans    &trans  &trans              &trans               &trans  &trans
+&kp LG(LS(S))  &kp F7  &kp F8  &kp F9  &kp F12                    &trans      &trans  &kp LA(PRINTSCREEN)  &trans  &kp LC(LA(DELETE))
+&trans         &kp F4  &kp F5  &kp F6  &kp F11                    &trans      &trans  &kp LS(LG(S))        &trans  &kp LC(LS(ESCAPE))
+&trans         &kp F1  &kp F2  &kp F3  &kp F10                    &kp C_MUTE  &trans  &trans               &trans  &kp LC(LA(INS))
+&trans         &trans  &trans  &trans  &trans   &trans    &trans  &trans              &trans               &trans  &trans
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
