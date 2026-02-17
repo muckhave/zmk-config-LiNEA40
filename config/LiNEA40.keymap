@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -133,7 +133,7 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <250>;
+            tapping-term-ms = <180>;
             flavor = "tap-preferred";
             hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40>;
         };
@@ -142,7 +142,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "TAP_HOLD_MOD_ORI";
             #binding-cells = <2>;
-            tapping-term-ms = <250>;
+            tapping-term-ms = <180>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
