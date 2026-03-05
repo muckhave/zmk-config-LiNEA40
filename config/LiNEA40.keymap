@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -180,7 +180,7 @@
 
         VIEW {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                     &trans                  &trans                   &trans         &trans               &trans
+&trans  &trans  &trans  &trans  &trans                     &kp LC(PLUS)            &kp LC(MINUS)            &trans         &trans               &trans
 &trans  &trans  &trans  &trans  &trans                     &kp LG(LEFT_ARROW)      &kp DOWN_ARROW           &kp UP_ARROW   &kp LG(RIGHT_ARROW)  &trans
 &trans  &trans  &trans  &trans  &trans                     &kp LG(LC(LEFT_ARROW))  &kp LG(LC(RIGHT_ARROW))  &kp LG(LC(D))  &kp LG(LC(F4))       &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &kp DEL  &trans                                           &trans         &trans               &trans
@@ -205,7 +205,7 @@
         SCROLL {
             bindings = <
 &trans            &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW  &kp LC(LG(RIGHT_ARROW))  &trans                                   &trans          &trans          &trans        &trans           &trans
-&trans            &kp LEFT_ALT            &kp LEFT_ALT  &kp LC(PAGE_UP)          &kp LG(PAGE_DOWN)                        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
+&trans            &kp LEFT_ALT            &kp LEFT_ALT  &kp LC(PAGE_UP)          &kp LC(PAGE_DOWN)                        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
 &kp LEFT_SHIFT    &kp PAGE_DOWN           &kp END       &kp PAGE_UP              &trans                                   &trans          &trans          &trans        &trans           &trans
 &kp LEFT_CONTROL  &trans                  &trans        &trans                   &trans             &trans    &kp DELETE  &trans                          &trans        &trans           &trans
             >;
