@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,
+            //スクロール方向を逆転,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -145,8 +145,8 @@
             bindings = <
 &kp Q                      &kp L         &kp U                    &kp COMMA                  &kp PERIOD                                                   &layer_tap_ori 4 F           &kp W                      &layer_tap_ori 9 R       &kp Y               &kp P
 &layer_tap_ori 5 E         &kp I         &mod_top_ori LEFT_ALT A  &mod_top_ori LEFT_SHIFT O  &mod_top_ori LEFT_CONTROL MINUS                              &mod_top_ori LEFT_CONTROL K  &mod_top_ori LEFT_SHIFT T  &mod_top_ori LEFT_ALT N  &layer_tap_ori 7 S  &layer_tap_ori 5 H
-&mod_top_ori LEFT_SHIFT Z  &kp X         &kp C                    &kp V                      &kp SEMICOLON                                                &kp G                        &kp D                      &layer_tap_ori 2 M       &kp J               &mod_top_ori RIGHT_SHIFT B
-&mod_top_ori LCTRL ESC     &kp LEFT_WIN  &mt LEFT_ALT GRAVE       &kp INS                    &layer_tap_ori 7 SPACE           &lt 2 TAB    &kp BACKSPACE  &layer_tap_ori 8 ENTER                                  &lt 6 RIGHT_BRACKET      &kp BACKSLASH       &mod_top_ori RIGHT_SHIFT SLASH
+&mod_top_ori LEFT_SHIFT Z  &kp X         &kp C                    &layer_tap_ori 3 V         &kp SEMICOLON                                                &kp G                        &kp D                      &layer_tap_ori 2 M       &kp J               &mod_top_ori RIGHT_SHIFT B
+&kp LCTRL                  &kp LEFT_WIN  &mt LEFT_ALT GRAVE       &kp INS                    &layer_tap_ori 7 SPACE           &lt 3 TAB    &kp BACKSPACE  &layer_tap_ori 8 ENTER                                  &lt 6 RIGHT_BRACKET      &kp BACKSLASH       &mod_top_ori RIGHT_CONTROL SLASH
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
