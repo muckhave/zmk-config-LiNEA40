@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,
+            //スクロール方向を逆転,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -116,6 +116,26 @@
 
             tap-ms = <20>;
         };
+
+        layer_tap_ori: layer_tap_ori {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_TAP_ORI";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <150>;
+        };
+
+        mod_top_ori: mod_top_ori {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOD_TOP_ORI";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <150>;
+        };
     };
 
     keymap {
@@ -123,10 +143,10 @@
 
         default_layer {
             bindings = <
-&kp Q          &kp L         &kp U               &kp COMMA  &kp PERIOD                                 &kp F        &kp W  &kp R                &kp Y          &kp P
-&lt 5 E        &kp I         &kp A               &kp O      &kp MINUS                                  &kp K        &kp T  &kp N                &lt 7 S        &lt 5 H
-&kp Z          &kp X         &kp C               &kp V      &kp SEMICOLON                              &kp G        &kp D  &kp M                &kp J          &mt RIGHT_SHIFT B
-&mt LCTRL ESC  &kp LEFT_WIN  &mt LEFT_ALT GRAVE  &kp INS    &lt 5 SPACE    &lt 2 TAB    &kp BACKSPACE  &lt 4 ENTER         &lt 6 RIGHT_BRACKET  &kp BACKSLASH  &mt RIGHT_SHIFT SLASH
+&kp Q          &kp L         &kp U                    &kp COMMA  &kp PERIOD                                 &kp F                        &kp W                      &kp R                    &kp Y          &kp P
+&lt 5 E        &kp I         &mod_top_ori LEFT_ALT A  &kp O      &kp MINUS                                  &mod_top_ori LEFT_CONTROL K  &mod_top_ori LEFT_SHIFT T  &mod_top_ori LEFT_ALT N  &lt 7 S        &lt 5 H
+&kp Z          &kp X         &kp C                    &kp V      &kp SEMICOLON                              &kp G                        &kp D                      &kp M                    &kp J          &mt RIGHT_SHIFT B
+&mt LCTRL ESC  &kp LEFT_WIN  &mt LEFT_ALT GRAVE       &kp INS    &lt 5 SPACE    &lt 2 TAB    &kp BACKSPACE  &lt 4 ENTER                                             &lt 6 RIGHT_BRACKET      &kp BACKSLASH  &mt RIGHT_SHIFT SLASH
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
